@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  margin: 2em 0 0 2em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  max-width: 500px;
+  max-height: 400px;
+  font-size: 1.4em;
+  padding: 1em 1em 2em 1em;
+  overflow: hidden;
+  color: white;
+  background: rgb(66, 153, 208);
+  background: linear-gradient(260deg, rgba(66, 153, 208, 1) 0%, rgba(133, 193, 240, 1) 100%);
+  position: relative;
+}
+
+.first-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#bookmark-icon {
+  background: url('./icon/bookmark-icon.svg') no-repeat center center/cover;
+  width: 24px;
+  height: 32px;
+}
+
+.first-line h3 {
+  padding-bottom: 0.5em;
+  font-weight: normal;
+}
+
+.first-line::before {
+  content: '';
+  width: 10em;
+  height: 10em;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.35;
+  position: absolute;
+  right: -4em;
+  top: -4em;
+}
+
+.first-line::after {
+  content: '';
+  width: 10em;
+  height: 10em;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.35;
+  position: absolute;
+  right: -1em;
+  bottom: -5em;
+}
+
+.card :nth-child(2) {
+  font-weight: bold;
+  font-size: 1.45em;
+  padding-bottom: 1em;
+}
